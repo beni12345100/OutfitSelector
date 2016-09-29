@@ -1,0 +1,316 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.11"
+        android:orientation="vertical"
+        android:id="@+id/header"
+        android:background="#66a6dc" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_weight="0.02" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="Accessories"
+                android:id="@+id/t_chooseAccessories"
+                android:layout_centerHorizontal="true"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginTop="12dp" />
+
+        </RelativeLayout>
+    </TableRow>
+
+    <TextView
+        android:layout_width="396dp"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="What would you like to wear?"
+        android:id="@+id/textView2"
+        android:background="#f9f9f9"
+        android:paddingTop="7dp"
+        android:paddingLeft="5dp"
+        android:layout_weight="0.11"
+        android:textColor="#030303" />
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/tableRow3" >
+
+        <TextView
+            android:layout_width="193dp"
+            android:layout_height="40dp"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="Watches"
+            android:id="@+id/t_Watches"
+            android:layout_weight="0.04"
+            android:textColor="#898d91"
+            android:paddingLeft="10dp"
+            android:paddingTop="5dp"
+            android:textSize="25dp"
+            android:textStyle="bold" />
+
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:id="@+id/c_watches"
+            android:layout_gravity="right"
+            android:checked="false"
+            android:nestedScrollingEnabled="false"
+            android:elegantTextHeight="false"
+            android:layout_weight="0.03" />
+    </TableRow>
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/tableRow4" >
+
+        <TextView
+            android:layout_width="193dp"
+            android:layout_height="40dp"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="Belts"
+            android:id="@+id/t_belts"
+            android:layout_weight="0.04"
+            android:textColor="#898d91"
+            android:paddingLeft="10dp"
+            android:paddingTop="5dp"
+            android:textSize="25dp"
+            android:textStyle="bold" />
+
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:id="@+id/c_Belts"
+            android:layout_gravity="right"
+            android:checked="false"
+            android:nestedScrollingEnabled="false"
+            android:elegantTextHeight="false"
+            android:layout_weight="0.03" />
+    </TableRow>
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/tableRow5" >
+
+        <TextView
+            android:layout_width="193dp"
+            android:layout_height="40dp"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="Caps"
+            android:id="@+id/T_caps"
+            android:layout_weight="0.04"
+            android:textColor="#898d91"
+            android:paddingLeft="10dp"
+            android:paddingTop="5dp"
+            android:textSize="25dp"
+            android:textStyle="bold" />
+
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:id="@+id/c_caps"
+            android:layout_gravity="right"
+            android:checked="false"
+            android:nestedScrollingEnabled="false"
+            android:elegantTextHeight="false"
+            android:layout_weight="0.03" />
+    </TableRow>
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/tableRow6" >
+
+        <TextView
+            android:layout_width="193dp"
+            android:layout_height="40dp"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="Beanies"
+            android:id="@+id/t_beanies"
+            android:layout_weight="0.04"
+            android:textColor="#898d91"
+            android:paddingLeft="10dp"
+            android:paddingTop="5dp"
+            android:textSize="25dp"
+            android:textStyle="bold" />
+
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:id="@+id/c_beanies"
+            android:layout_gravity="right"
+            android:checked="false"
+            android:nestedScrollingEnabled="false"
+            android:elegantTextHeight="false"
+            android:layout_weight="0.03" />
+    </TableRow>
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/tableRow7" >
+
+        <TextView
+            android:layout_width="193dp"
+            android:layout_height="40dp"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="Sunglasses"
+            android:id="@+id/t_sunglasses"
+            android:layout_weight="0.04"
+            android:textColor="#898d91"
+            android:paddingLeft="10dp"
+            android:paddingTop="5dp"
+            android:textSize="25dp"
+            android:textStyle="bold" />
+
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:id="@+id/c_sunglasses"
+            android:layout_gravity="right"
+            android:checked="false"
+            android:nestedScrollingEnabled="false"
+            android:elegantTextHeight="false"
+            android:layout_weight="0.03" />
+    </TableRow>
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/tableRow8" >
+
+        <TextView
+            android:layout_width="193dp"
+            android:layout_height="40dp"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="Necklace"
+            android:id="@+id/t_necklace"
+            android:layout_weight="0.04"
+            android:textColor="#898d91"
+            android:paddingLeft="10dp"
+            android:paddingTop="5dp"
+            android:textSize="25dp"
+            android:textStyle="bold" />
+
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:id="@+id/c_necklace"
+            android:layout_gravity="right"
+            android:checked="false"
+            android:nestedScrollingEnabled="false"
+            android:elegantTextHeight="false"
+            android:layout_weight="0.03" />
+    </TableRow>
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/tableRow9" >
+
+        <TextView
+            android:layout_width="193dp"
+            android:layout_height="40dp"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="Bracelets"
+            android:id="@+id/t_bracelets"
+            android:layout_weight="0.04"
+            android:textColor="#898d91"
+            android:paddingLeft="10dp"
+            android:paddingTop="5dp"
+            android:textSize="25dp"
+            android:textStyle="bold" />
+
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:id="@+id/c_bracelets"
+            android:layout_gravity="right"
+            android:checked="false"
+            android:nestedScrollingEnabled="false"
+            android:elegantTextHeight="false"
+            android:layout_weight="0.03" />
+    </TableRow>
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/tableRow10" >
+
+        <TextView
+            android:layout_width="193dp"
+            android:layout_height="40dp"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="Rings"
+            android:id="@+id/t_rings"
+            android:layout_weight="0.04"
+            android:textColor="#898d91"
+            android:paddingLeft="10dp"
+            android:paddingTop="5dp"
+            android:textSize="25dp"
+            android:textStyle="bold" />
+
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:id="@+id/c_Rings"
+            android:layout_gravity="right"
+            android:checked="false"
+            android:nestedScrollingEnabled="false"
+            android:elegantTextHeight="false"
+            android:layout_weight="0.03" />
+    </TableRow>
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/tableRow11"
+        android:layout_weight="0.10"
+        android:weightSum="1">
+
+        <Space
+            android:layout_width="wrap_content"
+            android:layout_height="83dp"
+            android:layout_weight="0.12" />
+    </TableRow>
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.33"
+        android:weightSum="1" >
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="No accessories"
+            android:id="@+id/button2"
+            android:layout_weight="0.17"
+            android:paddingLeft="10dp" />
+
+        <Space
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="0.66" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Choose Accessories"
+            android:id="@+id/b_chooseAccessories"
+            android:onClick="next" />
+    </TableRow>
+</LinearLayout>

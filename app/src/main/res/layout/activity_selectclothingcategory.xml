@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="1"
+    android:background="#d6dbe1">
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:orientation="vertical"
+        android:id="@+id/tableRow"
+        android:background="#66a6dc" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_weight="0.02" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="Choose Outfit"
+                android:id="@+id/t_chooseOutfit"
+                android:layout_centerHorizontal="true"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginTop="12dp" />
+
+        </RelativeLayout>
+    </TableRow>
+
+    <TextView
+        android:layout_width="396dp"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="What would you like to wear?"
+        android:id="@+id/t_"
+        android:background="#f9f9f9"
+        android:paddingTop="7dp"
+        android:paddingLeft="5dp"
+        android:layout_weight="0.03"
+        android:textColor="#030303" />
+
+    <ListView
+        android:id="@+id/listView1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+    </ListView>
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.33"
+        android:weightSum="1">
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/uncheck_all"
+            android:id="@+id/b_uncheckAll"
+            android:layout_weight="0.17"
+            android:paddingLeft="10dp" />
+
+        <Space
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="0.66" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/choose_outfit"
+            android:id="@+id/b_chooseOutfit"
+            android:onClick="next" />
+
+    </TableRow>
+</LinearLayout>

@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#d6dbe1">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Brand"
+        android:id="@+id/t_brand"
+        android:layout_marginTop="71dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="26dp"
+        android:textColor="@color/material_grey_600" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/in_brand"
+        android:layout_below="@+id/t_brand"
+        android:layout_alignStart="@+id/t_brand"
+        android:width="150dp"
+        android:inputType="text" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/in_Description"
+        android:width="150dp"
+        android:layout_below="@+id/t_description"
+        android:layout_alignStart="@+id/t_description" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="@string/description"
+        android:id="@+id/t_description"
+        android:layout_marginTop="41dp"
+        android:layout_below="@+id/in_brand"
+        android:layout_alignStart="@+id/in_brand"
+        android:textColor="@color/material_grey_600" />
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:weightSum="1"
+        android:id="@+id/linearLayout">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_weight="0.08"
+            android:orientation="vertical"
+            android:id="@+id/header"
+            android:background="#66a6dc">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:text="Add Clothing Item"
+                    android:id="@+id/b_addClothing"
+                    android:layout_centerHorizontal="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginTop="12dp" />
+
+            </RelativeLayout>
+
+        </TableRow>
+    </LinearLayout>
+
+    <Spinner
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/accessory_spinner"
+        android:spinnerMode="dropdown"
+        android:layout_above="@+id/b_save"
+        android:layout_alignParentEnd="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Save"
+        android:id="@+id/b_save"
+        android:textSize="16dp"
+        android:onClick="save"
+        android:layout_marginBottom="31dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignEnd="@+id/b_newPicture" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/mImageView"
+        android:src="#d6dbe1"
+        android:layout_above="@+id/b_newPicture"
+        android:layout_alignEnd="@+id/accessory_spinner"
+        android:layout_below="@+id/linearLayout"
+        android:layout_toEndOf="@+id/in_brand" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="   New Picture   "
+        android:id="@+id/b_newPicture"
+        android:onClick="takePicture"
+        android:layout_marginStart="36dp"
+        android:layout_above="@+id/accessory_spinner"
+        android:layout_toEndOf="@+id/in_Description" />
+
+</RelativeLayout>

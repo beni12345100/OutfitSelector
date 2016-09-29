@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">OutfitSelector</string>
+    <string name="build_outfit">Build Outfit</string>
+    <string name="view_my_clothing_items">View my Clothing Items</string>
+    <string name="uncheck_all">Uncheck all</string>
+    <string name="choose_outfit">Choose Outfit</string>
+    <string name="description">Description</string>
+    <string name="next">next</string>
+</resources>

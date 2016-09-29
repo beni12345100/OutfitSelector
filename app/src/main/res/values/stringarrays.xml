@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+        <string-array name="clothing_categorys">
+            <item>Jacket</item>
+            <item>Sweatshirt</item>
+            <item>Hoddie</item>
+            <item>T-Shirt</item>
+            <item>Shirt</item>
+            <item>Polo Shirt</item>
+            <item>Jeans</item>
+            <item>Pants</item>
+            <item>Shorts</item>
+        </string-array>
+    <string-array name="accessory_categorys">
+        <item>Watch</item>
+        <item>Belt</item>
+        <item>Cap</item>
+        <item>Beanie</item>
+        <item>Sunglasses</item>
+        <item>Necklace</item>
+        <item>Bracelet</item>
+        <item>Ring</item>
+    </string-array>
+</resources>
